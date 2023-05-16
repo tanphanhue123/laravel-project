@@ -8,6 +8,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./:/var/www/html
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
     depends_on:
       - db
     networks:
